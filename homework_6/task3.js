@@ -11,8 +11,25 @@ function Divide(numerator, denominator) {
 }
 
 try {
-    Divide(50, 0);
-
+    Divide(50, 5);
 } catch (error){
     console.error('Something is wrong...', error.message);
+} finally {
+    console.log('Work completed!')
+ }
+
+ try {
+    Divide(50, 0);
+} catch (error){
+    console.error('Something is wrong...', error.message);
+} finally {
+    console.log('Work completed!')
 }
+
+try {
+    Divide(50, 'sdfsd');
+} catch (error){
+    console.error('Something is wrong...', error.message);
+} finally {
+    console.log('Work completed!')
+ }
